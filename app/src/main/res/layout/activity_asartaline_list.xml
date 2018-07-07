@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/iv_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/restaurant_view" />
+
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_greeting_msg"
+            android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:text="Good afternoon, Anish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_greeting_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_restaurant"
+            android:layout_alignLeft="@id/tv_greeting"
+            android:layout_marginBottom="58dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="It's time for lunch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular" />
+
+        <FrameLayout
+            android:id="@+id/v_linebreak"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tv_greeting"
+            android:layout_marginLeft="@dimen/margin_xxlarge"
+            android:layout_marginRight="@dimen/margin_xxlarge"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:background="@color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:drawableLeft="@drawable/ic_location_on_yellow_24dp"
+                android:drawableRight="@drawable/ic_search_gray_24dp"
+                android:paddingLeft="@dimen/margin_medium"
+
+                android:paddingRight="@dimen/margin_medium"
+                android:text="Search Restaurant"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_regular_2x" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_noodle"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/v_linebreak"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/noodle" />
+
+        <TextView
+            android:id="@+id/tv_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_noodle"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Chinese"
+            android:textAllCaps="true"
+            android:textColor="#757575"
+            android:textSize="@dimen/text_regular" />
+
+        <ImageView
+            android:id="@+id/iv_tacos"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/v_linebreak"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toRightOf="@id/iv_noodle"
+            android:src="@drawable/taco" />
+
+        <TextView
+            android:id="@+id/tv_taco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_tacos"
+            android:layout_below="@id/iv_tacos"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Tacos"
+            android:textAllCaps="true"
+            android:textColor="#757575"
+            android:textSize="@dimen/text_regular" />
+
+        <ImageView
+            android:id="@+id/iv_burger"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/v_linebreak"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toRightOf="@id/iv_tacos"
+            android:src="@drawable/burger" />
+
+        <TextView
+            android:id="@+id/tv_burger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_burger"
+            android:layout_below="@id/iv_burger"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Burger"
+            android:textAllCaps="true"
+            android:textColor="#757575"
+            android:textSize="@dimen/text_regular" />
+
+        <ImageView
+            android:id="@+id/iv_donut"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/v_linebreak"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/iv_burger"
+            android:src="@drawable/donut" />
+
+        <TextView
+            android:id="@+id/tv_donut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_donut"
+            android:layout_below="@id/iv_donut"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Donut"
+            android:textAllCaps="true"
+            android:textColor="#757575"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tv_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_chinese"
+            android:layout_below="@+id/tv_chinese"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="Offers"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_next_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_offer" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
